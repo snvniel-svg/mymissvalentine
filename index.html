@@ -635,7 +635,7 @@
                     </div>
                 </div>
                 <div class="puzzle-reveal-text" id="puzzleRevealText">
-                    <p class="complete-line">... you complete me.</p>
+                    <p class="complete-line">...you complete me.</p>
                     <p class="valentine-question">Will you be my Valentine?</p>
                     <button type="button" class="yes-only-btn" id="yesBtn">YES or YES</button>
                 </div>
@@ -643,7 +643,10 @@
 
             <!-- VIEW: Success -->
             <div id="successView" class="modal-view">
-                <p class="modal-title">Yehey, HAHAHAHAHAHAHAHA.</p>
+                <p class="modal-title">Yehey, HAHAHAHAHAHAHAHAHAHA.</p>
+                <div class="success-gif-wrap">
+                    <img src="giphy.gif" alt="" />
+                </div>
                 <button type="button" class="reset-btn" id="resetBtn">Reset</button>
             </div>
         </div>
@@ -817,10 +820,9 @@
             confetti.style.top = '-10px';
             confetti.style.background = ['#f093fb', '#f5576c', '#ffd700', '#4facfe', '#FFDAE9'][Math.floor(Math.random() * 5)];
             const duration = 2 + Math.random() * 2;
-            confetti.style.animation = `confetti-fall ${duration}s linear`
+            confetti.style.animation = `confetti-fall ${duration}s linear`;
             document.body.appendChild(confetti);
             setTimeout(() => confetti.remove(), (duration + 0.5) * 1000);
         }
     </script>
 </body>
-</html>
